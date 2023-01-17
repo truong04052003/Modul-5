@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// - Khai báo route resource để làm việc với posts
+    Route::get('/', [PostController::class, 'index'])->name('posts');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+    
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
