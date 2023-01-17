@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// - Khai báo route resource để làm việc với posts
+Route::get('/product', [ProductController::class, 'index'])->name('product');
 
 Route::get('/', function () {
     return view('welcome');
