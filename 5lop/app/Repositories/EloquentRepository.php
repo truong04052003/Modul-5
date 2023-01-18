@@ -1,7 +1,7 @@
 <?php
-namespace App\Repositories\Eloquents;
+namespace App\Repositories;
 
-use App\Repositories\Interfaces\RepositoryInterface;
+use App\Repositories\RepositoryInterface;
 
 abstract class EloquentRepository implements RepositoryInterface
 {

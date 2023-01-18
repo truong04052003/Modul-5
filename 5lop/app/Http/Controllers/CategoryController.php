@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
-use App\Services\Interfaces\CategoryServiceInterface;
+use App\Services\CategoryServiceInterface;
 class CategoryController extends Controller
 {
     protected $categoryService;

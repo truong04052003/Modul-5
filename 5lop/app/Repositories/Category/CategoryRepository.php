@@ -2,8 +2,8 @@
 namespace App\Repositories\Eloquents;
 
 use App\Models\Category;
-use App\Repositories\Interfaces\CategoryRepositoryInterface;
-use App\Repositories\Eloquents\EloquentRepository;
+use App\Repositories\CategoryRepositoryInterface;
+use App\Repositories\EloquentRepository;
 
 class CategoryRepository extends EloquentRepository implements CategoryRepositoryInterface
 {

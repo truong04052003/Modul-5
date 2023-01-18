@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Services\Product;
-
-use App\Services\Interfaces\ProductServiceInterface;
-use App\Repositories\Category\ProductRepositoryInterface as CategoryProductRepositoryInterface;
-use App\Repositories\Interfaces\ProductRepositoryInterface;
+use App\Repositories\ProductRepositoryInterface;
+use App\Services\ProductServiceInterface;
 use App\Services\BaseService;
+
 class ProductService extends BaseService implements ProductServiceInterface
 {
     protected $productRepository;

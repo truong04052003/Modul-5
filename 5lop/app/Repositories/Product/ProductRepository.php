@@ -2,8 +2,8 @@
 namespace App\Repositories\Eloquents;
 
 use App\Models\Product;
-use App\Repositories\Interfaces\ProductRepositoryInterface;
-use App\Repositories\Eloquents\EloquentRepository;
+use App\Repositories\ProductRepositoryInterface;
+use App\Repositories\EloquentRepository;
 
 class ProductRepository extends EloquentRepository implements ProductRepositoryInterface
 {

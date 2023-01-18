@@ -1,5 +1,5 @@
 <?php
-namespace App\Repositories\Interfaces;
+namespace App\Repositories;
 
 interface RepositoryInterface {
     public function all($request);
