@@ -1,20 +1,42 @@
 <?php
-namespace App\Repositories\Eloquents;
+
+namespace App\Repositories\Category;
 
 use App\Models\Category;
-use App\Repositories\CategoryRepositoryInterface;
-use App\Repositories\EloquentRepository;
+use App\Repositories\BaseRepository;
 
-class CategoryRepository extends EloquentRepository implements CategoryRepositoryInterface
+class CategoryRepository extends BaseRepository implements CategoryRepositoryInterface
 {
-    public function getModel()
+
+    function getModel()
     {
         return Category::class;
     }
 
-
-    public function paginate($request){
-        $result = $this->model->paginate();
-        return $result;
+    public function all($request)
+    {
+      
     }
+    public function update($id, $data)
+    {
+
+    }
+    public function delete($id)
+    {
+    
+    }
+    public function getTrashed()
+    {
+
+    }
+    public function restore($id)
+    {
+
+    }
+    public function force_destroy($id)
+    {
+
+    }
+
+
 }

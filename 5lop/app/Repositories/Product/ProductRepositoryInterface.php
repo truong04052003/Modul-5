@@ -1,6 +1,10 @@
 <?php 
-namespace App\Repositories;
-
+namespace App\Repositories\Product;
+use App\Repositories\RepositoryInterface;
 interface ProductRepositoryInterface extends RepositoryInterface{
-    function paginate($request);
+    public function all($request);
+    public function getTrashed();
+    public function restore($id);
+    public function force_destroy($id);
+    public function store( $request);
 }

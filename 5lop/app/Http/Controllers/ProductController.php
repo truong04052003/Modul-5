@@ -6,30 +6,34 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
-use App\Services\ProductServiceInterface;
+use App\Services\Product\ProductServiceInterface;
 
 class ProductController extends Controller
 {
     protected $productService;
-    public function __construct(ProductServiceInterface $productService){
+    public function __construct(ProductServiceInterface $productService)
+    {
         $this->productService = $productService;
     }
   
     public function index(Request $request)
     {
-        $items = $this->productService->all($request);
+        $products = $this->productService->all($request);
+        // dd($products);
+        return view('admin.products.index',compact('products'));
     }
-
   
     public function create()
     {
-        //
+        $products = Product::all();
+        return view('admin.products.create', compact('products'));
     }
 
    
-    public function store(StoreProductRequest $request)
+    public function store(Request $request)
     {
-        //
+        $this->productService->store($request);
+        return redirect()->route('products.index');
     }
 
   
@@ -51,8 +55,7 @@ class ProductController extends Controller
     }
 
  
-    public function destroy(Product $product)
-    {
-        //
+
     }
-}
+
+ 
