@@ -8,22 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
     <!-- VENDOR CSS -->
-    <link rel="stylesheet" href="{{asset('admin/assets/vendor/bootstrap/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('admin/assets/vendor/font-awesome/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('admin/assets/vendor/linearicons/style.css')}}">
-    <link rel="stylesheet" href="{{asset('admin/assets/vendor/chartist/css/chartist-custom.css')}}">
+    <link rel="stylesheet" href="{{ asset('admin/assets/vendor/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/assets/vendor/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/assets/vendor/linearicons/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/assets/vendor/chartist/css/chartist-custom.css') }}">
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="{{asset('admin/assets/css/main.css')}}">
+    <link rel="stylesheet" href="{{ asset('admin/assets/css/main.css') }}">
 
-    <link rel="stylesheet" href="{{asset('admin/assets/css/demo.css')}}">
+    <link rel="stylesheet" href="{{ asset('admin/assets/css/demo.css') }}">
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 
     <!-- ICONS -->
-    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('admin/assets/img/apple-icon.png')}}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{asset('admin/assets/img/favicon.png')}}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('admin/assets/img/apple-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('admin/assets/img/favicon.png') }}">
 </head>
 
 <body>
@@ -33,7 +33,7 @@
         <!-- NAVBAR -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="brand">
-                <a href="index.html"><img src="{{asset('admin/assets/img/logo-dark.png')}}" alt="Klorofil Logo"
+                <a href="index.html"><img src="{{ asset('admin/assets/img/logo-dark.png') }}" alt="Klorofil Logo"
                         class="img-responsive logo"></a>
             </div>
             <div class="container-fluid">
@@ -88,8 +88,8 @@
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img
-                                    src="{{asset('admin/assets/img/user.png')}}" class="img-circle" alt="Avatar"> <span>Samuel</span> <i
-                                    class="icon-submenu lnr lnr-chevron-down"></i></a>
+                                    src="{{ asset('admin/assets/img/user.png') }}" class="img-circle" alt="Avatar">
+                                <span>Samuel</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#"><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
                                 <li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
@@ -415,33 +415,35 @@
                                 <div class="panel-body">
                                     <ul class="list-unstyled activity-list">
                                         <li>
-                                            <img src="{{asset('assets/img/user1.png')}}" alt="Avatar"
+                                            <img src="{{ asset('assets/img/user1.png') }}" alt="Avatar"
                                                 class="img-circle pull-left avatar">
                                             <p><a href="#">Michael</a> has achieved 80% of his completed tasks
-                                                <span class="timestamp">20 minutes ago</span></p>
+                                                <span class="timestamp">20 minutes ago</span>
+                                            </p>
                                         </li>
                                         <li>
-                                            <img src="{{asset('assets/img/user2.png')}}" alt="Avatar"
+                                            <img src="{{ asset('assets/img/user2.png') }}" alt="Avatar"
                                                 class="img-circle pull-left avatar">
                                             <p><a href="#">Daniel</a> has been added as a team member to project
                                                 <a href="#">System Update</a> <span
-                                                    class="timestamp">Yesterday</span></p>
+                                                    class="timestamp">Yesterday</span>
+                                            </p>
                                         </li>
                                         <li>
-                                            <img src="{{asset('assets/img/user3.png')}}" alt="Avatar"
+                                            <img src="{{ asset('assets/img/user3.png') }}" alt="Avatar"
                                                 class="img-circle pull-left avatar">
                                             <p><a href="#">Martha</a> created a new heatmap view <a
                                                     href="#">Landing Page</a> <span class="timestamp">2 days
                                                     ago</span></p>
                                         </li>
                                         <li>
-                                            <img src="{{asset('assets/img/user4.png')}}" alt="Avatar"
+                                            <img src="{{ asset('assets/img/user4.png') }}" alt="Avatar"
                                                 class="img-circle pull-left avatar">
                                             <p><a href="#">Jane</a> has completed all of the tasks <span
                                                     class="timestamp">2 days ago</span></p>
                                         </li>
                                         <li>
-                                            <img src="{{asset('assets/img/user5.png')}}" alt="Avatar"
+                                            <img src="{{ asset('assets/img/user5.png') }}" alt="Avatar"
                                                 class="img-circle pull-left avatar">
                                             <p><a href="#">Jason</a> started a discussion about <a
                                                     href="#">Weekly Meeting</a> <span class="timestamp">3 days
@@ -591,12 +593,12 @@
     <!-- END WRAPPER -->
 
     <!-- Javascript -->
-    <script src="{{asset('assets/vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
-    <script src="{{asset('assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js')}}"></script>
-    <script src="{{asset('assets/vendor/chartist/js/chartist.min.js')}}"></script>
-    <script src="{{asset('assets/scripts/klorofil-common.js')}}"></script>
+    <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/chartist/js/chartist.min.js') }}"></script>
+    <script src="{{ asset('assets/scripts/klorofil-common.js') }}"></script>
 
 
     <script>
